@@ -2,6 +2,7 @@ import React from 'react';
 import { FormikHelpers, useFormik } from 'formik';
 import * as yup from 'yup';
 import styles from './LoginPage.module.css';
+import { useNavigate } from 'react-router-dom';
 
 type InitialValues = {
   email: string
@@ -13,6 +14,7 @@ type FormikOnSubmit =
 
 
 const Login: React.FC = () => {
+  const navigate = useNavigate()
 
   const initialValues = {
     email: '',
@@ -28,7 +30,8 @@ const Login: React.FC = () => {
   });
 
   const onSubmit: FormikOnSubmit = async ({ email, password }) => {
-    console.log(`Values: ${email}, ${password}`)
+    console.log(`Values: ${email}, ${password}`);
+    navigate('/user')
   };
 
   const {

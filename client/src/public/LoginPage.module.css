@@ -7,10 +7,8 @@
 
 .error {
   position: absolute;
-  align-self: center;
   color: red;
 }
-
 
 input {
   width: 10vw;
