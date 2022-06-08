@@ -1,0 +1,19 @@
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  position: absolute;
+  align-self: center;
+  color: red;
+}
+
+
+input {
+  width: 10vw;
+  padding: 5px;
+  margin: 5px;
+}

@@ -1,10 +1,14 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './public/LoginPage';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div>
-      <span>Hello</span>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
