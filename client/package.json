@@ -1,8 +1,9 @@
 {
-  "name": "ababa-task",
+  "name": "react-nest",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.11.38",
     "@types/react": "^18.0.12",
@@ -12,6 +13,7 @@
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
     "typescript": "^4.7.3",
     "yup": "^0.32.11"
   },

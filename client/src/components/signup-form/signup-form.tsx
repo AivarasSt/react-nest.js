@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormikHelpers, useFormik } from 'formik';
 import * as yup from 'yup';
-import styles from './LoginPage.module.css';
+import styles from './signup-form.module.css';
 import { useNavigate } from 'react-router-dom';
 
 type InitialValues = {
@@ -13,7 +13,7 @@ type FormikOnSubmit =
   (values: InitialValues, formikHelpers: FormikHelpers<InitialValues>) => void | Promise<void>;
 
 
-const Login: React.FC = () => {
+const SignUpForm: React.FC = () => {
   const navigate = useNavigate()
 
   const initialValues = {
@@ -79,10 +79,10 @@ const Login: React.FC = () => {
           />
           {touched.password && Boolean(errors.password) && <span className={styles.error}>{errors.password}</span>}
         </div>
-        <button type="submit">Login</button>
+        <button type="submit">Sign Up</button>
       </div>
     </form>
   )
 }
 
-export default Login;
+export default SignUpForm;
